@@ -1,6 +1,14 @@
 # M5StickC_Platformio_Template
 Project template to start programming M5StickC ESP32 with PlatformIO IDE and ESP-IDF
 
+### development  
+In your app_main() put this two lines:
+```
+M5Init();
+i2sInit();
+```
+To active AXP192 circuit and other modules. 
+
 ### If you need any help or information:
 :large_blue_circle:	 Facebook: https://www.facebook.com/walidamriou   
 :large_blue_circle:  Twitter: https://twitter.com/walidamriou    
