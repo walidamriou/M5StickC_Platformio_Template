@@ -27,14 +27,14 @@ Walid Amriou © copyright
 
 // URI handler function to be called during GET /TiniriSignalGenerator/about request 
 esp_err_t get_about_handler(httpd_req_t *req){
-    const char resp[] = "JSON of about here";
+    const char resp[] = " {\"device\": \"Tiniri Signal Generator\",\"Developer\": \"Walid Amriou\",\"Firmware version\": \"1.0.0\",\"Chip\": \"Espressif Systems ESP32 PICO (4M)\",}";
     httpd_resp_send(req, resp, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
 }
 
 // URI handler function to be called during GET /TiniriSignalGenerator/CurrentStatus request 
 esp_err_t get_CurrentStatus_handler(httpd_req_t *req){
-    const char resp[] = "JSON of current status here";
+    const char resp[] = " {\"GeneratorStatus\": \"stop\",\"SignalType\": \"Square\",\"Frequncy\": 10,\"DutyCycle\": 50,}";
     httpd_resp_send(req, resp, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
 }
