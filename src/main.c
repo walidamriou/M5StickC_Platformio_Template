@@ -6,11 +6,13 @@
 #include "esp_system.h"
 #include "esp_err.h"
 #include "esp_log.h"
-#include "m5stickc.h"
 #include "sdkconfig.h"
-#include "wire.h"
-#include "AXP192.h"
 #include "driver/i2s.h"
+
+#include "m5stickc/AXP192.h"
+#include "m5stickc/m5stickc.h"
+#include "m5stickc/wire.h"
+
 
 static uint8_t strbuff[50];
 static bool button_a_flag = false;
