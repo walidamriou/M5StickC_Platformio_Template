@@ -6,7 +6,7 @@ CONFIG_IDF_CMAKE=y
 CONFIG_IDF_TARGET="esp32"
 CONFIG_IDF_TARGET_ESP32=y
 CONFIG_IDF_FIRMWARE_CHIP_ID=0x0000
-
+i2c_config.clk_flags = 0
 #
 # SDK tool configuration
 #
